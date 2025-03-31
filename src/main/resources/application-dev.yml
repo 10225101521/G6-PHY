@@ -1,10 +1,11 @@
 spring:
   datasource:
-    url: jdbc:h2:file:./data/testdb;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
-    driverClassName: org.h2.Driver
-    username: sa
-    password:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.H2Dialect
+    url: jdbc:mysql://118.31.60.32:3306/phy_test?serverTimezone=UTC&useSSL=false&characterEncoding=utf8
+    username: g06
+    password: g06
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #jpa:
+  #  hibernate:
+  #    ddl-auto: update
+  #  database-platform: org.hibernate.dialect.H2Dialect
